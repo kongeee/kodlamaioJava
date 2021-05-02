@@ -1,0 +1,8 @@
+package kodlamaio;
+
+public class CourseManager {
+	public void addToCourse(Member member, Course course) {
+		System.out.println(member.fullName+" is added to "+course.courseName);
+		
+	}
+}

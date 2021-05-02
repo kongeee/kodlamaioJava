@@ -1,0 +1,17 @@
+package kodlamaio;
+
+public class Course {
+	//attributes
+	int courseID;
+	String courseName;
+	float completion;
+	String teacherName;
+	
+	//constructor
+	public Course(int cid, String cname, float completion, String tname) {
+		this.courseID 		= cid;
+		this.courseName 	= cname;
+		this.completion 	= completion;
+		this.teacherName 	= tname;
+	}
+}

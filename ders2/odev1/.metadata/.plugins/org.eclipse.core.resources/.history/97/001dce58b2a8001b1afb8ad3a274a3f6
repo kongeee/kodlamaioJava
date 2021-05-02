@@ -1,0 +1,21 @@
+package kodlamaio;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Course course1 = new Course(1, "Java kursu", "Engin Demiroğ", "kurs detay");
+		Member member1 = new Member(3, "Furkan Ekici", "furkanekici1997@gmail.com");
+		CourseManager courseManager = new CourseManager();
+		MemberManager memberManager = new MemberManager();
+		
+		courseManager.addToCourse(member1, course1);
+		
+		memberManager.editMember(member1, "Ekici", "furkanekici1997@gmail.com");
+		
+		Course course2 = new Course(2, "C# kursu", "Engin Demiroğ", "kurs detay222");
+		courseManager.addToCourse(member1, course2);
+		
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package kodlamaio;
+
+public class MemberManager {
+	public void editMember(Member member, String newName, String newE_mail) {
+		System.out.println("Before edit : " + member.fullName+"/"+member.e_mail);
+		
+		member.fullName = newName;
+		member.e_mail = newE_mail;
+		
+		System.out.println("After edit : " + member.fullName+"/"+member.e_mail);
+	}
+}
